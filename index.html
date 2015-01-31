@@ -1,0 +1,49 @@
+<html>
+<head>
+<script type="text/javascript" src="./showdown.js"></script>
+<link rel="stylesheet" type="text/css" href="./theme.css">
+<script type="text/javascript">
+var converter = new Showdown.converter();
+var res = converter.makeHtml(value);
+
+document.writeln(res);
+</script>
+</head>
+<body>
+    <div id="markdown">
+        #Hello, world
+        **Hello**world
+        
+        >Hello
+        <hr>
+        
+        * Hello
+        * world
+        
+        1 Hello
+        2 lada
+        
+        This is graph 1
+        This is graph 2
+        
+        ```
+        Hello
+        world
+        ```
+    </div>
+    <pre>
+    </pre>
+    <div id="results"></div>
+    <script>
+    var conv = new Showdown.converter();
+    var el = document.getElementById("markdown");
+    var content = el.innerHTML.replace(/  |^\s+|\s+$/g,"")
+        document.writeln(content);
+        document.writeln(typeof(content));
+        var ret = conv.makeHtml(content);
+        alert(ret);
+        document.writeln(ret);
+        document.writeln(conv.makeHtml(">Html"))
+    </script>
+</body>
+</html>
