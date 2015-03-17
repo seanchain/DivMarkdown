@@ -57,6 +57,7 @@ var convertTextTimer,processingTime;
 var lastText,lastOutput,lastRoomLeft;
 var convertTextSetting, convertTextButton, paneSetting;
 var inputPane,previewPane,outputPane,syntaxPane;
+var htmlcode;
 var maxDelay = 3000; // longest update pause (in ms)
 
 
@@ -177,9 +178,11 @@ function convertText() {
 	if (paneSetting.value == "outputPane") {
 		// the output pane is selected
 		outputPane.value = text;
+        htmlcode = text;
 	} else if (paneSetting.value == "previewPane") {
 		// the preview pane is selected	
         $("#previewPane").html(text);
+        htmlcode = text;
         $('div#previewPane pre code').each(function(i, block) {
             hljs.highlightBlock(block);
         });
