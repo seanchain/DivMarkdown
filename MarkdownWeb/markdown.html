@@ -12,6 +12,7 @@
 </head>
 
 <body>
+   
 
 
 	<div id="pageHeader">
@@ -25,7 +26,7 @@
 		</div>
 		<textarea id="inputPane" cols="80" rows="20" class="pane">
 ##Start your work with our Markdown editor
-###Want to know how to write markdown? Click [Here](http://www.chensihang.com/materials/markdown.pdf)
+###Want to know how to write Markdown? Click [Here](http://www.chensihang.com/materials/markdown.pdf)
 ```
 public class Test{
     public static void main(String[] args){
@@ -46,7 +47,7 @@ public class Test{
 	
 		<textarea id="outputPane" class="pane" cols="80" rows="20" readonly="readonly"></textarea>
 	
-		<div id="previewPane" class="pane"><link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/solarized_dark.min.css">
+		<div id="previewPane" class="pane">
     <script src="./highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script><noscript><h2>You'll need to enable Javascript to use this tool.</h2></noscript></div>
 	</div>
 	
@@ -84,6 +85,7 @@ public class Test{
 			<button id="clearPage" type="button" title="clearPage">
 				清空内容
 			</button>
+            <small id="wordcount"></small>
 		</span>
 		<div id="processingTime" title="Last processing time"></div>
 	</div>
@@ -92,6 +94,7 @@ public class Test{
             $("#clearPage").click(function(){
                 $("#inputPane").val(''); 
             });
+            $("#wordcount").text(getwordcount());
             $(document).delegate('#inputPane', 'keydown', function(e) {
                 var keyCode = e.keyCode || e.which;
                 if (keyCode == 9) {

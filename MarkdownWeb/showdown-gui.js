@@ -133,6 +133,18 @@ function startGui() {
 	outputPane.scrollTop = 0;
 }
 
+function getwordcount() {
+    var str = $("#inputPane").val();
+    var count = 0;
+    for(var i = 0; i < str.length; i ++){
+	   var ch = str.charAt(i);
+	        if(ch > '~' || (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z' )){
+	            count += 1;
+	        }
+        }
+    return "字数数量：" + count;
+}
+
 
 //
 //	Conversion
@@ -158,7 +170,6 @@ function convertText() {
 	var endTime = new Date().getTime();	
 	processingTime = endTime - startTime;
 	document.getElementById("processingTime").innerHTML = null;
-
 	// save proportional scroll positions
 	saveScrollPositions();
 
@@ -172,6 +183,7 @@ function convertText() {
         $('div#previewPane pre code').each(function(i, block) {
             hljs.highlightBlock(block);
         });
+        document.getElementById("wordcount").innerHTML = getwordcount();
 	}
 
 	lastOutput = text;
