@@ -12,7 +12,25 @@
 </head>
 
 <body>
-   
+    <script>
+        document.addEventListener("keydown", function(event){
+            if(event.keyCode === 27){
+                var curr = $("#inputPane").prop("selectionStart");
+                str = "";
+                for(var i = curr - 3; i < curr; i ++){
+                    str += $("#inputPane").val().charAt(i);    
+                }
+                if(str == "lnk"){
+                    var suc = $("#inputPane").val().replace(str, "[]()");
+                    $("#inputPane").val(suc);
+                }
+                if(str == "img"){
+                    var suc = $("#inputPane").val().replace(str, "![]()");
+                    $("#inputPane").val(suc);
+                }
+            }
+        });
+    </script>
 
 
 	<div id="pageHeader">
