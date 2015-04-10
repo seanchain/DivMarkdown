@@ -72,7 +72,7 @@ public class Test{
 	<div id="footer">
 		<span id="byline">
 			<b><a href="http://www.chensihang.com/materials/markdown.pdf">Download cheat sheet</a></b> copyright &copy; 沉思·航 2015
-			<span><button id="savepdf">存为HTML</button></span>
+			<span><button id="savepdf">存为PDF</button></span>
 	
 			<script type="text/javascript">
 			/* <![CDATA[ */
@@ -118,9 +118,9 @@ public class Test{
                 $.post("savepdf.php",
                 {
                     code:htmlcode
-                },
-                function(data,status){
-                    alert("Data: " + data + "\nStatus: " + status);
+                }, function(res){
+                  console.log("success");
+                  window.location.href="./handlesave.php";
                 });
             });
             $(document).delegate('#inputPane', 'keydown', function(e) {
