@@ -73,7 +73,7 @@ public class Test{
 	<div id="footer">
 		<span id="byline">
 			<b><a href="http://www.chensihang.com/materials/markdown.pdf">Download cheat sheet</a></b> copyright &copy; 沉思·航 2015
-			<span><button id="savepdf">存为PDF</button></span>
+			<span><button id="savepdf" class="button success tiny">存为PDF</button></span>
 	
 			<script type="text/javascript">
 			/* <![CDATA[ */
@@ -102,7 +102,7 @@ public class Test{
 		</span>
 	
 		<span id="convertTextControls">
-			<button id="clearPage" type="button" title="clearPage">
+			<button id="clearPage" type="button" class="button tiny default" title="clearPage">
 				清空内容
 			</button>
             <small id="wordcount"></small>
