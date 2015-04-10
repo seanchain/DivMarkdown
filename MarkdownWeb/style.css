@@ -165,11 +165,11 @@
 		}
 
 		#previewPane * {
-			line-height: 1.4em;
+			line-height: 1.2em;
 		}
         #previewPane blockquote {
             border-left: 4px solid #dddddd;
-            padding: 0 12px;
+            padding: 0 10px 0;
             color: #777777; 
             margin-left: 20px;
             font-style: italic;
