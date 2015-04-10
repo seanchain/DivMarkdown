@@ -6199,3 +6199,104 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+
+
+#paneSetting {
+			display: block;
+			margin-left: auto;
+			margin-right: 0.5em;
+			font-size: 110%;
+			font-weight: 900;
+			font-family: Arial, Verdana, sans-serif;
+			background-color: #FFFFFF;
+			color: #444;
+			border: 1px solid #999;
+		}
+		
+		.pane {
+			margin: 0;
+			padding: 0;
+			padding-left: 4px; /* pane padding */
+			width: 100%;
+			border: none;
+			background-color: #eee;
+			display: block;
+			border: 1px solid #888;
+			border-right: 1px solid #000;
+			border-bottom: 1px solid #000;
+		
+			/* note: the panes get their height set with
+		       javascript; see sizeTextAreas(). */
+		
+			/* for now, set a height so things look nice
+			   if the user has javascript disabled */
+			height: 400px;
+		}
+		
+		#previewPane {
+			background-color: #FFFFFF;
+            font-family: "Source Han Sans CN", Arial, "Microsoft YaHei", sans-serif;
+            font-weight: 500;
+		}
+		
+		#outputPane {
+			background-color: #FFFFFF;
+			display: none;
+            font-family: Consolas, monospace;
+            font-size: 14px;
+		}
+		
+		div.pane {
+			overflow: auto;
+		}
+		
+		#inputPane {
+            font-family: Monaco, Consolas, monospace;
+            font-size:13px;
+			background-color: #fff;
+		}
+		
+		#previewPane {
+			padding: 0;
+		}
+
+		#previewPane > * {
+			margin-left: 4px;
+			margin-right: 4px;
+   		}
+
+		#previewPane > blockquote {
+			margin-left: 3em;
+   		}
+
+		#previewPane > :first-child {
+			margin-top: 4px; /* pane padding */
+		}
+
+		#previewPane * {
+			line-height: 1.4em;
+		}
+        #previewPane blockquote {
+            border-left: 4px solid #dddddd;
+            padding: 0 12px;
+            color: #777777; 
+            margin-left: 20px;
+            font-style: italic;
+        }
+
+		#previewPane code {
+            background-color: #FAFAFA;
+            font-family: Consolas, monospace;
+			font-size: 1.3em;
+		}
+
+		#leftContainer {
+			float: left;
+			left: 1.5%;
+		}
+		
+		#rightContainer {
+			float: right;
+			right: 1.5%;
+		}
+		

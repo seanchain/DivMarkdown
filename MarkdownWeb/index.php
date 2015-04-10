@@ -8,6 +8,7 @@
     <script type="text/javascript" src="jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="./tomorrow.css">
+<!--    <link rel="stylesheet" href="./foundation.css">-->
     <script src="./highlight.pack.js"></script>
 </head>
 
@@ -66,7 +67,7 @@ public class Test{
 		<textarea id="outputPane" class="pane" cols="80" rows="20" readonly="readonly"></textarea>
 	
 		<div id="previewPane" class="pane">
-    <script src="./highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script><noscript><h2>You'll need to enable Javascript to use this tool.</h2></noscript></div>
+    <script src="./highlight.pack.js"></script><noscript><h2>You'll need to enable Javascript to use this tool.</h2></noscript></div>
 	</div>
 	
 	<div id="footer">
@@ -113,6 +114,12 @@ public class Test{
             $("#clearPage").click(function(){
                 $("#inputPane").val(''); 
             });
+            $("div").on("change", ".paneHeader", function(){
+                $('div#previewPane pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });
+            });
+            
             $("#wordcount").text(getwordcount());
             $("#savepdf").click(function(){
                 $.post("savepdf.php",
