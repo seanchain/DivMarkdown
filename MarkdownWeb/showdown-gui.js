@@ -151,6 +151,16 @@ function getwordcount() {
 //	Conversion
 //
 
+function highlightCode() {
+    var tag = $("pre").each(function(){
+        var lan = $(this).attr("class");
+        if(lan !== "undefined"){
+            var classname = "pre." + lan;
+            document.getElements(classname).enlight({language:lan});
+        }
+    });
+}
+
 function convertText() {
 	// get input text
 	var text = inputPane.value;
@@ -183,9 +193,7 @@ function convertText() {
 		// the preview pane is selected	
         $("#previewPane").html(text);
         htmlcode = text;
-        $('div#previewPane pre code').each(function(i, block) {
-            hljs.highlightBlock(block);
-        });
+        highlightCode();
         document.getElementById("wordcount").innerHTML = getwordcount();
 	}
 
@@ -223,6 +231,7 @@ function onPaneSettingChanged() {
 	} else if (paneSetting.value == "previewPane") {
 		// Update preview pane
 		previewPane.innerHTML = lastOutput;
+        highlightCode();
 	}
 }
 

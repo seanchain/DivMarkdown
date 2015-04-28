@@ -1,15 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Markdown编辑器</title>
-	<script type="text/javascript" src="showdown.js"></script>
-	<script type="text/javascript" src="showdown-gui.js"></script>
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="./tomorrow.css">
-<!--    <link rel="stylesheet" href="./foundation.css">-->
-    <script src="./highlight.pack.js"></script>
+	<script src="showdown.js"></script>
+	<script src="showdown-gui.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="./Resources/mootools-core-1.5.0-full-nocompat-yc.js"></script>
+    <script src="./Resources/mootools-more-1.5.0-yc.js"></script>
+    <script src="./Build/EnlighterJS.yui.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="Build/EnlighterJS.yui.css" type="text/css"/>
+	<meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" data-language="javascript" data-indent="2" data-selector-block="pre" data-selector-inline="code" />
 </head>
 
 <body>
@@ -38,7 +40,6 @@
 		<h1>Markdown编辑器</h1>
         <h3>Inspired by <a href="https://github.com/showdownjs/showdown">showdown.js</a></h3>
 	</div>
-	
 	<div id="leftContainer">
 		<div class="paneHeader">
 			<span>输入</span>
@@ -46,7 +47,7 @@
 		<textarea id="inputPane" cols="80" rows="20" class="pane">
 ##Start your work with our Markdown editor
 ###Want to know how to write Markdown? Click [Here](http://www.chensihang.com/materials/markdown.pdf)
-```
+```java
 public class Test{
     public static void main(String[] args){
         System.out.println("Hello, world");
@@ -67,7 +68,7 @@ public class Test{
 		<textarea id="outputPane" class="pane" cols="80" rows="20" readonly="readonly"></textarea>
 	
 		<div id="previewPane" class="pane">
-    <script src="./highlight.pack.js"></script><noscript><h2>You'll need to enable Javascript to use this tool.</h2></noscript></div>
+    <noscript><h2>You'll need to enable Javascript to use this tool.</h2></noscript></div>
 	</div>
 	
 	<div id="footer">
@@ -114,12 +115,6 @@ public class Test{
             $("#clearPage").click(function(){
                 $("#inputPane").val(''); 
             });
-            $("div").on("change", ".paneHeader", function(){
-                $('div#previewPane pre code').each(function(i, block) {
-                    hljs.highlightBlock(block);
-                });
-            });
-            
             $("#wordcount").text(getwordcount());
             $("#savepdf").click(function(){
                 $.post("savepdf.php",

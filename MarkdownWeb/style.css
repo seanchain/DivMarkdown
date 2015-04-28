@@ -20,11 +20,6 @@ html,body {
 a {
     color: deepskyblue;
 }
-
-html {
-    overflow: hidden;
-}
-
 textarea {
     font-family: droidsansmono;
 }

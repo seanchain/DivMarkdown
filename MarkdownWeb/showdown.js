@@ -503,6 +503,7 @@ Showdown.converter = function (converter_options) {
         text = _DoAutoLinks(text);
         text = _EncodeAmpsAndAngles(text);
         text = _DoItalicsAndBold(text);
+        text = _DoDel(text);
 
         // Do hard breaks:
         text = text.replace(/  +\n/g, " <br />\n");
@@ -1031,7 +1032,7 @@ Showdown.converter = function (converter_options) {
                 codeblock = codeblock.replace(/^\n+/g, ""); // trim leading newlines
                 codeblock = codeblock.replace(/\n+$/g, ""); // trim trailing whitespace
 
-                codeblock = "<pre><code" + (language ? " class=\"" + language + '"' : "") + ">" + codeblock + "\n</code></pre>";
+                codeblock = "<pre" + (language ? " class=\"" + language + '"' : "") + ">" + codeblock + "\n</pre>";
 
                 return hashBlock(codeblock);
             }
@@ -1138,6 +1139,14 @@ Showdown.converter = function (converter_options) {
         text = text.replace(/(\*|_)(?=\S)([^\r]*?\S)\1/g,
             "<em>$2</em>");
 
+        return text;
+    }
+    
+    var _DoDel = function (text) {
+        text = text.replace(/(~T~T)\s?(?=\S)([^\r]*?\S)\s?\1/g,
+            "<del>$2</del>");
+        text = text.replace(/(~T)\s?(?=\S)([^\r]*?\S)\s?\1/g,
+            "<p style='text-decoration:underline'>$2</p>");
         return text;
     }
 
