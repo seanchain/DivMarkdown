@@ -8,7 +8,12 @@ function convert()
 }
 
 $code = $_POST['code'];
-$code = '<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Markdown编辑器</title><script type="text/javascript" src="showdown.js"></script><script type="text/javascript" src="showdown-gui.js"></script><script type="text/javascript" src="jquery.min.js"></script><link rel="stylesheet" href="github.css" type="text/css"><link rel="stylesheet" href="./tomorrow.css"><script src="./highlight.pack.js"></script></head><script>hljs.initHighlightingOnLoad();</script>'.$code;
+$code = '<head><script src="./Resources/mootools-core-1.5.0-full-nocompat-yc.js"></script>
+    <script src="./Resources/mootools-more-1.5.0-yc.js"></script>
+    <script src="./Build/EnlighterJS.yui.js"></script>
+    <link rel="stylesheet" href="theme.css" type="text/css" />
+    <link rel="stylesheet" href="Build/EnlighterJS.yui.css" type="text/css"/>
+	<meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" data-language="javascript" data-indent="2" data-selector-block="pre" data-selector-inline="code" /></head>'.$code;
 $fp = fopen("res.html", "w");
 fputs($fp, $code);
 fclose($fp);

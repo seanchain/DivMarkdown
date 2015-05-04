@@ -120,7 +120,7 @@ function startGui() {
 	onPaneSettingChanged();
 
 	// build the converter
-	converter = new Showdown.converter();
+	converter = new Showdown.converter({extensions:['table']});
 
 	// do an initial conversion to avoid a hiccup
 	convertText();

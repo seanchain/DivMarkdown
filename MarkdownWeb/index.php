@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Markdown编辑器</title>
 	<script src="showdown.js"></script>
+	<script src="showdown-table.min.js"></script>
 	<script src="showdown-gui.js"></script>
     <script src="jquery.min.js"></script>
     <script src="./Resources/mootools-core-1.5.0-full-nocompat-yc.js"></script>
