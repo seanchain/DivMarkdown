@@ -28,10 +28,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38546923" vertical-offset="10433" max-vertical-offset="11529">
-              <caret line="515" column="18" selection-start-line="515" selection-start-column="18" selection-end-line="515" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.67204845" vertical-offset="3009" max-vertical-offset="11634">
+              <caret line="175" column="27" selection-start-line="175" selection-start-column="27" selection-end-line="175" selection-end-column="27" />
               <folding>
-                <element signature="e#14368#14691#2" expanded="true" />
+                <element signature="e#14480#14803#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.388889" vertical-offset="126" max-vertical-offset="1659">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state vertical-scroll-proportion="-5.0555553" vertical-offset="273" max-vertical-offset="1659">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -119,8 +119,8 @@
         <option value="$PROJECT_DIR$/showdown.js" />
         <option value="$PROJECT_DIR$/res.html" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/showdown-gui.js" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
@@ -130,8 +130,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="406" />
-    <option name="y" value="23" />
+    <option name="x" value="586" />
+    <option name="y" value="101" />
     <option name="width" value="1920" />
     <option name="height" value="1128" />
   </component>
@@ -233,7 +233,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="406" y="23" width="1920" height="1128" extended-state="6" />
+    <frame x="586" y="101" width="1920" height="1128" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -283,7 +283,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="4452" max-vertical-offset="10710">
           <caret line="212" column="1" selection-start-line="212" selection-start-column="1" selection-end-line="212" selection-end-column="1" />
           <folding>
-            <element signature="e#14368#14691#2" expanded="true" />
+            <element signature="e#14480#14803#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -345,7 +345,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3392" max-vertical-offset="8160">
           <caret line="212" column="1" selection-start-line="212" selection-start-column="1" selection-end-line="212" selection-end-column="1" />
           <folding>
-            <element signature="e#14368#14691#2" expanded="true" />
+            <element signature="e#14480#14803#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -382,7 +382,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3816" max-vertical-offset="9180">
           <caret line="212" column="1" selection-start-line="212" selection-start-column="1" selection-end-line="212" selection-end-column="1" />
           <folding>
-            <element signature="e#14368#14691#2" expanded="true" />
+            <element signature="e#14480#14803#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -419,7 +419,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3689" max-vertical-offset="8347">
           <caret line="217" column="1" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
           <folding>
-            <element signature="e#14368#14691#2" expanded="true" />
+            <element signature="e#14480#14803#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -456,7 +456,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="4123" max-vertical-offset="9329">
           <caret line="217" column="1" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
           <folding>
-            <element signature="e#14368#14691#2" expanded="true" />
+            <element signature="e#14480#14803#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -474,7 +474,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8347">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14368#14691#2" expanded="true" />
+            <element signature="e#14480#14803#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -533,14 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.388889" vertical-offset="126" max-vertical-offset="1659">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/showdown-gui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.148149" vertical-offset="5273" max-vertical-offset="6363">
@@ -549,12 +541,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0555553" vertical-offset="273" max-vertical-offset="1659">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38546923" vertical-offset="10433" max-vertical-offset="11529">
-          <caret line="515" column="18" selection-start-line="515" selection-start-column="18" selection-end-line="515" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.67204845" vertical-offset="3009" max-vertical-offset="11634">
+          <caret line="175" column="27" selection-start-line="175" selection-start-column="27" selection-end-line="175" selection-end-column="27" />
           <folding>
-            <element signature="e#14368#14691#2" expanded="true" />
+            <element signature="e#14480#14803#2" expanded="true" />
           </folding>
         </state>
       </provider>

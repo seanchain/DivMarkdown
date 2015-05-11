@@ -62,9 +62,8 @@ textarea {
 
 #leftContainer, #rightContainer {
     margin: 0;
-    padding: 0;
     position: relative;
-    width: 47.5%;
+    width: 46%;
     margin-top: -1.4em;
 }
 
@@ -83,8 +82,8 @@ textarea {
 }
 
 .paneHeader {
-    margin: 30px 0 0 0;
-    padding: 10px;
+    margin: 20px 0 0 0;
+    padding: 20px;
     position: relative;
     width: 100%;
     display: block;
@@ -97,7 +96,7 @@ textarea {
 }
 
 .paneHeader span {
-    color: black;
+    color: white;
     padding: 0 1em;
     font-size: 150%;
 }
@@ -118,8 +117,7 @@ textarea {
 
 .pane {
     margin: 30px 0;
-    padding: 0;
-    padding-left: 4px; /* pane padding */
+    padding: 10px 10px;
     width: 100%;
     border: none;
     background-color: #eee;
@@ -127,6 +125,9 @@ textarea {
     border: 1px solid #888;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
 
     /* note: the panes get their height set with
        javascript; see sizeTextAreas(). */
@@ -153,6 +154,10 @@ div.pane {
     overflow: auto;
 }
 
+#wordcount {
+    color: white;
+}
+
 #inputPane {
     font-family: Monaco, Consolas, monospace;
     font-size:15px;
@@ -160,7 +165,6 @@ div.pane {
 }
 
 #previewPane {
-    padding: 0;
     word-wrap: break-word;
 }
 
@@ -217,7 +221,7 @@ div.pane {
 
 #byline {
     padding-left: 2em;
-    color: #666;
+    color: whitesmoke;
 }
 
 #byline a{
@@ -235,6 +239,7 @@ div.pane {
     color: #000;
     border: none;
 }
+
 
 #clearPage {
     line-height: 1em;
