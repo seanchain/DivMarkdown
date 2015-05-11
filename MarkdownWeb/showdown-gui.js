@@ -1,56 +1,4 @@
-//
-// showdown-gui.js
-//
-// A sample application for Showdown, a javascript port
-// of Markdown.
-//
-// Copyright (c) 2007 John Fraser.
-//
-// Redistributable under a BSD-style open source license.
-// See license.txt for more information.
-//
-// The full source distribution is at:
-//
-//				A A L
-//				T C A
-//				T K B
-//
-//   <http://www.attacklab.net/>
-//
-
-//
-// The Showdown converter itself is in showdown.js, which must be
-// included by the HTML before this file is.
-//
-// showdown-gui.js assumes the id and class definitions in
-// showdown.html.  It isn't dependent on the CSS, but it does
-// manually hide, display, and resize the individual panes --
-// overriding the stylesheets.
-//
-// This sample application only interacts with showdown.js in
-// two places:
-//
-//  In startGui():
-//
-//      converter = new Showdown.converter();
-//
-//  In convertText():
-//
-//      text = converter.makeHtml(text);
-//
-// The rest of this file is user interface stuff.
-//
-
-
-//
-// Register for onload
-//
 window.onload = startGui;
-
-
-//
-// Globals
-//
 
 var converter;
 var convertTextTimer,processingTime;
@@ -61,10 +9,6 @@ var htmlcode;
 var maxDelay = 3000; // longest update pause (in ms)
 
 
-//
-//	Initialization
-//
-
 function startGui() {
 	// find elements
 	convertTextSetting = "continuous"; 
@@ -74,8 +18,7 @@ function startGui() {
 	inputPane = document.getElementById("inputPane");
 	previewPane = document.getElementById("previewPane");
 	outputPane = document.getElementById("outputPane");
-//  clearPage = document.getElementById("clearPage");
-	// set event handlers
+
 	convertTextSetting.onchange = onConvertTextSettingChanged;
 	paneSetting.onchange = onPaneSettingChanged;
 	window.onresize = setPaneHeights;
@@ -305,19 +248,6 @@ function restoreScrollPositions() {
 	setScrollPos(outputPane,outputScrollPos);
 }
 
-//
-// Textarea resizing
-//
-// Some browsers (i.e. IE) refuse to set textarea
-// percentage heights in standards mode. (But other units?
-// No problem.  Percentage widths? No problem.)
-//
-// So we'll do it in javascript.  If IE's behavior ever
-// changes, we should remove this crap and do 100% textarea
-// heights in CSS, because it makes resizing much smoother
-// on other browsers.
-//
-
 function getTop(element) {
 	var sum = element.offsetTop;
 	while(element = element.offsetParent)
@@ -341,26 +271,27 @@ function getWindowHeight(element) {
 }
 
 function setPaneHeights() {
-    var textarea  = inputPane;
-	var footer = document.getElementById("footer");
-
-	var windowHeight = getWindowHeight();
-	var footerHeight = getElementHeight(footer);
-	var textareaTop = getTop(textarea);
-
-	// figure out how much room the panes should fill
-	var roomLeft = windowHeight - footerHeight - textareaTop;
-
-	if (roomLeft < 0) roomLeft = 0;
-
-	// if it hasn't changed, return
-	if (roomLeft == lastRoomLeft) {
-		return;
-	}
-	lastRoomLeft = roomLeft;
-
-	// resize all panes
-	inputPane.style.height = roomLeft + "px";
-	previewPane.style.height = roomLeft + "px";
-	outputPane.style.height = roomLeft + "px";
+    console.log("called this");
+//    var textarea  = inputPane;
+//	var footer = document.getElementById("footer");
+//
+//	var windowHeight = getWindowHeight();
+//	var footerHeight = getElementHeight(footer);
+//	var textareaTop = getTop(textarea);
+//
+//	// figure out how much room the panes should fill
+//	var roomLeft = windowHeight - footerHeight - textareaTop;
+//
+//	if (roomLeft < 0) roomLeft = 0;
+//
+//	// if it hasn't changed, return
+//	if (roomLeft == lastRoomLeft) {
+//		return;
+//	}
+//	lastRoomLeft = roomLeft;
+//
+//	// resize all panes
+//	inputPane.style.height = roomLeft + "px";
+//	previewPane.style.height = roomLeft + "px";
+//	outputPane.style.height = roomLeft + "px";
 }
