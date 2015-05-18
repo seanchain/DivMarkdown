@@ -1,5 +1,5 @@
 <?php
-$file_url = 'http://www.chensihang.com/data/res.pdf';
+$file_url = '../data/res.pdf';
 header('Content-Type: application/octet-stream');
 header("Content-Transfer-Encoding: Binary");
 header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\"");
