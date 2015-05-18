@@ -21,8 +21,9 @@ requires:
 provides: [EnlighterJS]
 ...
 */
+
 .EnlighterJS, .EnlighterJSWrapper {
-    font-family: Monaco, Courier, Monospace;
+    font-family: "FiraMono-Normal";
     font-size: 10px;
     line-height: 16px;
     overflow: auto;
@@ -112,7 +113,7 @@ ol.EnlighterJS li.specialline, ul.EnlighterJS li.specialline {
     margin: 0;
     padding: 0;
     line-height: inherit;
-    font-size: 13px
+    font-size: 15px
 }
 
 .EnlighterJSTabPane .controls ul {
@@ -299,7 +300,8 @@ ol.mootoolsEnlighterJS li.hoverEnabled:hover, ul.mootoolsEnlighterJS li.hoverEna
 }
 
 .enlighterEnlighterJS, .enlighterEnlighterJSWrapper {
-    font-family: Consolas, "Source Code Pro", "Courier New", Monospace
+    font-family: FiraMono, Consolas, "Source Code Pro", "Courier New", Monospace;
+    font-size:18px;
 }
 
 span.enlighterEnlighterJS {
@@ -308,7 +310,7 @@ span.enlighterEnlighterJS {
 }
 
 ol.enlighterEnlighterJS, ul.enlighterEnlighterJS, .enlighterEnlighterJSWrapper pre {
-    font-size: 13px;
+    font-size: 15px;
     color: #939393;
     background-color: #fff
 }

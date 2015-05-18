@@ -1,12 +1,17 @@
 
 @font-face{
-    font-family: 'Monaco';
-    src: url(../assets/fonts/Monaco.ttf);
+    font-family: 'FiraMono';
+    src: url(../assets/fonts/FiraMono-Bold.otf);
 }
 
 @font-face{
     font-family: 'opensans';
     src: url(../assets/fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: 'opensans-bold';
+    src: url(../assets/fonts/OpenSans-Bold.ttf);
 }
 
 html,body {
@@ -19,9 +24,6 @@ html,body {
 
 a {
     color: deepskyblue;
-}
-textarea {
-    font-family: Monaco;
 }
 
 #pageHeader {
@@ -140,7 +142,11 @@ textarea {
 #previewPane {
     background-color: #FFFFFF;
     font-family: opensans, Arial, "Microsoft YaHei", sans-serif;
-    font-weight: 500;
+}
+
+#previewPane h1, h2, h3, h4, h5 {
+    font-family:opensans-bold;
+    font-weight:normal;
 }
 
 #outputPane {
@@ -159,7 +165,7 @@ div.pane {
 }
 
 #inputPane {
-    font-family: Monaco, Consolas, monospace;
+    font-family: FiraMono, Consolas, monospace;
     font-size:15px;
     background-color: #fff;
 }
@@ -195,7 +201,7 @@ div.pane {
 
 #previewPane code {
     background-color: #FAFAFA;
-    font-family: droidsansmono, DejaVuSansMono, monospace;
+    font-family: FiraMono, monospace;
     font-size: 0.95em;
 }
 
