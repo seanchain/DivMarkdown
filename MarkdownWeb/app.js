@@ -15,6 +15,18 @@ $(function () {
                 window.location.href = "./handlesave.php";
             });
     });
+    $("#savemd").click(function () {
+        var md = $("#inputPane").val();
+        console.log(md);
+        $.post("savemd.php",
+            {
+                md: md
+            }, function (res) {
+                console.log("success");
+                console.log(res);
+                window.location.href="./mddownload.php";
+            });
+    });
     $(document).delegate('#inputPane', 'keydown', function (e) {
         var keyCode = e.keyCode || e.which;
         if (keyCode == 9) {

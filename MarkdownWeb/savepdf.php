@@ -2,7 +2,7 @@
 
 function convert()
 {
-    $url = "http://www.chensihang.com/markdown/res.html";
+    $url = "./res.html";
     $filename = "../data/res.pdf";
     exec("/usr/local/bin/wkhtmltopdf $url $filename");
 }

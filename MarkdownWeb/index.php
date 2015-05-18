@@ -59,7 +59,7 @@ public class Test{
             沉思·航 2015
 		</span>
         <span id="savepdf"><button class="button success tiny">存为PDF</button></span>
-	
+	    <span id="savemd"><button class="button success tiny">存为Markdown</button></span>
 		<span id="convertTextControls">
 			<button id="clearPage" type="button" class="button tiny default" title="clearPage">
                 清空内容
