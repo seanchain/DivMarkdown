@@ -3,7 +3,7 @@
 function convert()
 {
     $url = "./res.html";
-    $filename = "../data/res.pdf";
+    $filename = "./res.pdf";
     exec("/usr/local/bin/wkhtmltopdf $url $filename");
 }
 
@@ -18,9 +18,4 @@ $fp = fopen("res.html", "w");
 fputs($fp, $code);
 fclose($fp);
 convert();
-
-//$filepdf = "../data/res.pdf";
-//$filehtml = "./res.html";
-//unlink($filepdf);
-//unlink($filehtml);
 ?>
